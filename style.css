@@ -1,0 +1,64 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    #hoverText {
+      padding: 10px;
+      background-color: #f0f0f0;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .accordion-btn {
+      background-color: #008cba;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .panel {
+      background-color: #f9f9f9;
+      display: none;
+      overflow: hidden;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .panel.active {
+      display: block;
+      animation: slideIn 0.5s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    #galleryImg {
+      display: block;
+      width: 200px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+    }
+
+    #feedback {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.9em;
+    }
